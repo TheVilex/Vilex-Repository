@@ -1,0 +1,15 @@
+local Module = {}
+
+function Module.new(name)
+  local gui = instance.new("ScreenGui")
+  gui.Parent = game.CoreGui
+  gui.Name = "Vilex UI"
+
+  local frame = instance.new
+
+  local title = instance.new("TextLabel")
+  title.Text = tostring(name)
+  title.Parent = gui
+end)
+
+return Module
