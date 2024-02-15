@@ -5,7 +5,8 @@ function Module.new(name)
   gui.Parent = game.CoreGui
   gui.Name = "Vilex UI"
 
-  local frame = instance.new
+  local frame = instance.new("Frame")
+  frame.Parent = gui
 
   local title = instance.new("TextLabel")
   title.Text = tostring(name)
